@@ -1,0 +1,8 @@
+{
+  "aws_region": "us-west-2",
+  "aws_account_id": "219757291726",
+  "ecr_repository": "enwth/g2-backend",
+  "image_tag": "latest",
+  "ecs_cluster": "hackaton-g2",
+  "ecs_service": "flask-pandas-task-service-0odlc93r"
+}

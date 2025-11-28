@@ -35,3 +35,4 @@ docker push [account-id].dkr.ecr.[region].amazonaws.com/api:latest
 
 - GET `/status` - Returns "OK"
 - GET `/loadcurve/{pod}` - Returns load curve for specified pod
+- GET `/mix/{mixId}` - Returns an energy Mix 

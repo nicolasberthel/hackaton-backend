@@ -6,9 +6,11 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY main.py .
+COPY api/ api/
 
 ADD data/profiles data/profiles
 ADD data/mix data/mix
+ADD data/projects data/projects
 
 EXPOSE 8000
 

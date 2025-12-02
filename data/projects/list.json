@@ -1,13 +1,86 @@
 [
     {
         "id": "000001",
-        "name": "Photovoltaic Bertrange",
-        "capacity": 1200,
-        "start_supply": "2025-12-12",
-        "coordinates": {
-            "latitude": 49.6067979,
-            "longitude": 6.0281541
+        "name": "Luxembourg Solar Park Phase 2",
+        "capacity": {
+            "value": 1200,
+            "unit": "kWc"
         },
-        "energy": "solar"
+        "start_supply": "2025-12-12",
+        "location": {
+            "city": "Bertrange",
+            "country": "Luxembourg",
+            "coordinates": {
+                "latitude": 49.6067979,
+                "longitude": 6.0281541
+            }
+        },
+        "energy": "solar",
+        "shares": {
+            "price": 1250.00,
+            "available": 200,
+            "sold": 120
+        },
+        "status": "open",
+        "forecast": {
+            "return": 7.2,
+            "co2": 1.8
+        }
+    },
+    {
+        "id": "000002",
+        "name": "Community Battery Storage",
+        "capacity": {
+            "value": 5,
+            "unit": "kWh"
+        },
+        "start_supply": "2025-06-13",
+        "location": {
+            "city": "Esch-sur-Alzette",
+            "country": "Luxembourg",
+            "coordinates": {
+                "latitude": 49.497799,
+                "longitude": 5.9884733
+            }
+        },
+        "energy": "battery",
+        "shares": {
+            "price": 750.00,
+            "available": 10,
+            "sold": 9
+        },
+        "status": "open",
+        "forecast": {
+            "return": 5.8,
+            "co2": 1.2
+        }
+    },
+    {
+        "id": "000003",
+        "name": "Northern Wind Farm Expansion",
+        "capacity": {
+            "value": 1.5,
+            "unit": "kW"
+        },
+        "start_supply": "2025-06-13",
+        "location": {
+            "city": "Erpeldange",
+            "country": "Luxembourg",
+            "coordinates": {
+                "latitude": 49.86116363958534, 
+                "longitude": 6.129282791539355
+            }
+        },
+        "energy": "wind",
+        "shares": {
+            "price": 850.00,
+            "available": 100,
+            "sold": 40
+        },
+        "status": "open",
+        "forecast": {
+            "return": 6.5,
+            "co2": 2.1
+        }
     }
 ]

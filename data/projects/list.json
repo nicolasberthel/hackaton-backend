@@ -1,37 +1,14 @@
 [
     {
-        "id": "000001",
-        "name": "Luxembourg Solar Park Phase 2",
+        "id": "00001",
+        "name": "Esch-sur-Alzette Community Battery",
+        "description": "Large-scale community battery storage enabling peak shaving and renewable energy optimization",
         "capacity": {
-            "value": 1200,
-            "unit": "kWc"
+            "value": 200,
+            "unit": "kWh"
         },
-        "start_supply": "2025-12-12",
-        "location": {
-            "city": "Bertrange",
-            "country": "Luxembourg",
-            "coordinates": {
-                "latitude": 49.6067979,
-                "longitude": 6.0281541
-            }
-        },
-        "energy": "solar",
-        "shares": {
-            "price": 1250.00,
-            "available": 200,
-            "sold": 120
-        },
-        "status": "open",
-        "forecast": {
-            "return": 7.2,
-            "co2": 1.8
-        }
-    },
-    {
-        "id": "000002",
-        "name": "Community Battery Storage",
-        "capacity": {
-            "value": 5,
+        "capacity_per_share": {
+            "value": 10,
             "unit": "kWh"
         },
         "start_supply": "2025-06-13",
@@ -45,20 +22,73 @@
         },
         "energy": "battery",
         "shares": {
-            "price": 750.00,
-            "available": 10,
-            "sold": 9
+            "total": 20,
+            "price": 2500.00,
+            "available": 12,
+            "sold": 8
         },
         "status": "open",
         "forecast": {
-            "return": 5.8,
-            "co2": 1.2
+            "return": 6.5,
+            "co2_savings_per_share": 0.8
+        },
+        "specs": {
+            "type": "Lithium Iron Phosphate (LiFePO4)",
+            "cycles": 6000,
+            "efficiency": 0.95,
+            "warranty_years": 15
         }
     },
     {
-        "id": "000003",
-        "name": "Northern Wind Farm Expansion",
+        "id": "00002",
+        "name": "Bertrange Solar Park Phase 2",
+        "description": "Rooftop solar installation on industrial buildings with optimal south-facing orientation",
         "capacity": {
+            "value": 1200,
+            "unit": "kWc"
+        },
+        "capacity_per_share": {
+            "value": 2.5,
+            "unit": "kWc"
+        },
+        "start_supply": "2025-12-12",
+        "location": {
+            "city": "Bertrange",
+            "country": "Luxembourg",
+            "coordinates": {
+                "latitude": 49.6067979,
+                "longitude": 6.0281541
+            }
+        },
+        "energy": "solar",
+        "shares": {
+            "total": 480,
+            "price": 1250.00,
+            "available": 280,
+            "sold": 200
+        },
+        "status": "open",
+        "forecast": {
+            "return": 7.2,
+            "co2_savings_per_share": 1.8,
+            "annual_production_per_share": 2400
+        },
+        "specs": {
+            "panel_type": "Monocrystalline",
+            "efficiency": 0.21,
+            "warranty_years": 25,
+            "degradation_rate": 0.005
+        }
+    },
+    {
+        "id": "00003",
+        "name": "Erpeldange Wind Farm",
+        "description": "Northern Luxembourg wind farm with consistent production and excellent wind conditions",
+        "capacity": {
+            "value": 150,
+            "unit": "kW"
+        },
+        "capacity_per_share": {
             "value": 1.5,
             "unit": "kW"
         },
@@ -67,20 +97,319 @@
             "city": "Erpeldange",
             "country": "Luxembourg",
             "coordinates": {
-                "latitude": 49.86116363958534, 
+                "latitude": 49.86116363958534,
                 "longitude": 6.129282791539355
             }
         },
         "energy": "wind",
         "shares": {
+            "total": 100,
             "price": 850.00,
-            "available": 100,
+            "available": 60,
             "sold": 40
         },
         "status": "open",
         "forecast": {
-            "return": 6.5,
-            "co2": 2.1
+            "return": 8.5,
+            "co2_savings_per_share": 2.1,
+            "annual_production_per_share": 3800
+        },
+        "specs": {
+            "turbine_type": "Horizontal Axis",
+            "hub_height": 80,
+            "warranty_years": 20,
+            "capacity_factor": 0.28
+        }
+    },
+    {
+        "id": "00004",
+        "name": "Luxembourg City Rooftop Solar",
+        "description": "Premium rooftop solar on commercial buildings in Luxembourg City center",
+        "capacity": {
+            "value": 500,
+            "unit": "kWc"
+        },
+        "capacity_per_share": {
+            "value": 2.0,
+            "unit": "kWc"
+        },
+        "start_supply": "2025-09-01",
+        "location": {
+            "city": "Luxembourg City",
+            "country": "Luxembourg",
+            "coordinates": {
+                "latitude": 49.6116,
+                "longitude": 6.1319
+            }
+        },
+        "energy": "solar",
+        "shares": {
+            "total": 250,
+            "price": 1100.00,
+            "available": 180,
+            "sold": 70
+        },
+        "status": "open",
+        "forecast": {
+            "return": 7.8,
+            "co2_savings_per_share": 1.5,
+            "annual_production_per_share": 1900
+        },
+        "specs": {
+            "panel_type": "Bifacial Monocrystalline",
+            "efficiency": 0.22,
+            "warranty_years": 25,
+            "degradation_rate": 0.004
+        }
+    },
+    {
+        "id": "00005",
+        "name": "Differdange Industrial Battery",
+        "description": "Industrial-scale battery for heavy industry energy optimization and grid services",
+        "capacity": {
+            "value": 500,
+            "unit": "kWh"
+        },
+        "capacity_per_share": {
+            "value": 25,
+            "unit": "kWh"
+        },
+        "start_supply": "2025-08-15",
+        "location": {
+            "city": "Differdange",
+            "country": "Luxembourg",
+            "coordinates": {
+                "latitude": 49.5247,
+                "longitude": 5.8908
+            }
+        },
+        "energy": "battery",
+        "shares": {
+            "total": 20,
+            "price": 5800.00,
+            "available": 15,
+            "sold": 5
+        },
+        "status": "open",
+        "forecast": {
+            "return": 7.2,
+            "co2_savings_per_share": 2.0
+        },
+        "specs": {
+            "type": "Lithium Iron Phosphate (LiFePO4)",
+            "cycles": 8000,
+            "efficiency": 0.96,
+            "warranty_years": 15,
+            "max_charge_rate": 125,
+            "max_discharge_rate": 125
+        }
+    },
+    {
+        "id": "00006",
+        "name": "Ettelbruck Community Wind",
+        "description": "Community-owned wind turbine with excellent capacity factor and local support",
+        "capacity": {
+            "value": 200,
+            "unit": "kW"
+        },
+        "capacity_per_share": {
+            "value": 2.0,
+            "unit": "kW"
+        },
+        "start_supply": "2025-10-01",
+        "location": {
+            "city": "Ettelbruck",
+            "country": "Luxembourg",
+            "coordinates": {
+                "latitude": 49.8472,
+                "longitude": 6.1044
+            }
+        },
+        "energy": "wind",
+        "shares": {
+            "total": 100,
+            "price": 1150.00,
+            "available": 75,
+            "sold": 25
+        },
+        "status": "open",
+        "forecast": {
+            "return": 9.2,
+            "co2_savings_per_share": 2.8,
+            "annual_production_per_share": 5200
+        },
+        "specs": {
+            "turbine_type": "Horizontal Axis",
+            "hub_height": 100,
+            "warranty_years": 20,
+            "capacity_factor": 0.32
+        }
+    },
+    {
+        "id": "00007",
+        "name": "Remich Solar Vineyard",
+        "description": "Agrivoltaic project combining wine production with solar energy generation",
+        "capacity": {
+            "value": 300,
+            "unit": "kWc"
+        },
+        "capacity_per_share": {
+            "value": 1.5,
+            "unit": "kWc"
+        },
+        "start_supply": "2026-03-01",
+        "location": {
+            "city": "Remich",
+            "country": "Luxembourg",
+            "coordinates": {
+                "latitude": 49.5450,
+                "longitude": 6.3678
+            }
+        },
+        "energy": "solar",
+        "shares": {
+            "total": 200,
+            "price": 950.00,
+            "available": 150,
+            "sold": 50
+        },
+        "status": "open",
+        "forecast": {
+            "return": 7.5,
+            "co2_savings_per_share": 1.2,
+            "annual_production_per_share": 1450
+        },
+        "specs": {
+            "panel_type": "Semi-transparent Bifacial",
+            "efficiency": 0.19,
+            "warranty_years": 25,
+            "degradation_rate": 0.005,
+            "special_feature": "Agrivoltaic - dual land use"
+        }
+    },
+    {
+        "id": "00008",
+        "name": "Wiltz Compact Battery",
+        "description": "Residential-scale battery storage for local community energy sharing",
+        "capacity": {
+            "value": 100,
+            "unit": "kWh"
+        },
+        "capacity_per_share": {
+            "value": 5,
+            "unit": "kWh"
+        },
+        "start_supply": "2025-07-01",
+        "location": {
+            "city": "Wiltz",
+            "country": "Luxembourg",
+            "coordinates": {
+                "latitude": 49.9667,
+                "longitude": 5.9333
+            }
+        },
+        "energy": "battery",
+        "shares": {
+            "total": 20,
+            "price": 1400.00,
+            "available": 16,
+            "sold": 4
+        },
+        "status": "open",
+        "forecast": {
+            "return": 6.8,
+            "co2_savings_per_share": 0.5
+        },
+        "specs": {
+            "type": "Lithium Iron Phosphate (LiFePO4)",
+            "cycles": 6000,
+            "efficiency": 0.94,
+            "warranty_years": 12,
+            "max_charge_rate": 25,
+            "max_discharge_rate": 25
+        }
+    },
+    {
+        "id": "00009",
+        "name": "Dudelange Solar Factory",
+        "description": "Large-scale solar installation on factory rooftops with high self-consumption",
+        "capacity": {
+            "value": 800,
+            "unit": "kWc"
+        },
+        "capacity_per_share": {
+            "value": 3.2,
+            "unit": "kWc"
+        },
+        "start_supply": "2025-11-15",
+        "location": {
+            "city": "Dudelange",
+            "country": "Luxembourg",
+            "coordinates": {
+                "latitude": 49.4814,
+                "longitude": 6.0858
+            }
+        },
+        "energy": "solar",
+        "shares": {
+            "total": 250,
+            "price": 1600.00,
+            "available": 200,
+            "sold": 50
+        },
+        "status": "open",
+        "forecast": {
+            "return": 8.2,
+            "co2_savings_per_share": 2.4,
+            "annual_production_per_share": 3100
+        },
+        "specs": {
+            "panel_type": "High-efficiency Monocrystalline",
+            "efficiency": 0.23,
+            "warranty_years": 30,
+            "degradation_rate": 0.003
+        }
+    },
+    {
+        "id": "00010",
+        "name": "Clervaux Mountain Wind",
+        "description": "High-altitude wind farm with exceptional wind resources and production",
+        "capacity": {
+            "value": 300,
+            "unit": "kW"
+        },
+        "capacity_per_share": {
+            "value": 3.0,
+            "unit": "kW"
+        },
+        "start_supply": "2026-01-15",
+        "location": {
+            "city": "Clervaux",
+            "country": "Luxembourg",
+            "coordinates": {
+                "latitude": 50.0547,
+                "longitude": 6.0294
+            }
+        },
+        "energy": "wind",
+        "shares": {
+            "total": 100,
+            "price": 1750.00,
+            "available": 85,
+            "sold": 15
+        },
+        "status": "open",
+        "forecast": {
+            "return": 10.5,
+            "co2_savings_per_share": 4.2,
+            "annual_production_per_share": 8500
+        },
+        "specs": {
+            "turbine_type": "Horizontal Axis",
+            "hub_height": 120,
+            "warranty_years": 20,
+            "capacity_factor": 0.35,
+            "special_feature": "Mountain location - premium wind resource"
         }
     }
 ]

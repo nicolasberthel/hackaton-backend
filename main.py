@@ -25,10 +25,12 @@ app.add_middleware(
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FOLDER = BASE_DIR / "data" / "profiles"
 MIX_FOLDER = BASE_DIR / "data" / "mix"
+PROJECTS_FOLDER = BASE_DIR / "data" / "projects"
 
 logger.info(f"BASE_DIR: {BASE_DIR}")
 logger.info(f"DATA_FOLDER: {DATA_FOLDER}")
 logger.info(f"MIX_FOLDER: {MIX_FOLDER}")
+logger.info(f"PROJECTS_FOLDER: {PROJECTS_FOLDER}")
 
 
 @app.get("/status")
@@ -134,3 +136,33 @@ def get_mix(type: str) -> List[Dict[str, float]]:
     except Exception as e:
         logger.error(f"Error reading mix data: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Error reading mix data: {str(e)}")
+
+
+@app.get("/projects")
+def get_projects() -> List[Dict]:
+    """
+    Fetch the list of projects from local data folder.
+    Returns a JSON array with project information.
+    """
+    file_path = PROJECTS_FOLDER / "list.json"
+    
+    try:
+        # Check if file exists
+        if not file_path.exists():
+            raise HTTPException(status_code=404, detail="Projects list not found")
+        
+        # Read and parse JSON
+        with open(file_path, 'r', encoding='utf-8') as jsonfile:
+            projects_data = json.load(jsonfile)
+        
+        logger.info(f"Successfully loaded projects list with {len(projects_data)} projects")
+        return projects_data
+        
+    except HTTPException:
+        raise
+    except json.JSONDecodeError as e:
+        logger.error(f"Invalid JSON format: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Invalid JSON format: {str(e)}")
+    except Exception as e:
+        logger.error(f"Error reading projects list: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error reading projects list: {str(e)}")

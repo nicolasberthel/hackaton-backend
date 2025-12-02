@@ -1,0 +1,13 @@
+[
+    {
+        "id": "000001",
+        "name": "Photovoltaic Bertrange",
+        "capacity": 1200,
+        "start_supply": "2025-12-12",
+        "coordinates": {
+            "latitude": 49.6067979,
+            "longitude": 6.0281541
+        },
+        "energy": "solar"
+    }
+]

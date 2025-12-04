@@ -11,6 +11,7 @@ COPY api/ api/
 ADD data/profiles data/profiles
 ADD data/mix data/mix
 ADD data/projects data/projects
+ADD data/users data/users
 
 EXPOSE 8000
 

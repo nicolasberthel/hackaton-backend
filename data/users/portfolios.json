@@ -1,0 +1,173 @@
+{
+  "users": [
+    {
+      "user_id": "user_001",
+      "name": "Emma Dupont",
+      "email": "emma.dupont@example.lu",
+      "pod_id": "000011",
+      "registration_date": "2024-03-15",
+      "transactions": [
+        {
+          "project_id": "00003",
+          "project_name": "Erpeldange Wind Farm",
+          "energy_type": "wind",
+          "shares": 5,
+          "direction": "buy",
+          "purchase_date": "2024-06-01",
+          "purchase_price_per_share": 850.00,
+          "total_investment": 4250.00,
+          "current_value_per_share": 865.00,
+          "capacity_per_share": 1.5,
+          "capacity_unit": "kW"
+        },
+        {
+          "project_id": "00002",
+          "project_name": "Bertrange Solar Park Phase 2",
+          "energy_type": "solar",
+          "shares": 2,
+          "direction": "buy",
+          "purchase_date": "2024-08-15",
+          "purchase_price_per_share": 1250.00,
+          "total_investment": 2500.00,
+          "current_value_per_share": 1265.00,
+          "capacity_per_share": 2.5,
+          "capacity_unit": "kWc"
+        },
+        {
+          "project_id": "00002",
+          "project_name": "Bertrange Solar Park Phase 2",
+          "energy_type": "solar",
+          "shares": 1,
+          "direction": "buy",
+          "purchase_date": "2024-05-15",
+          "purchase_price_per_share": 1260.00,
+          "total_investment": 1260.00,
+          "current_value_per_share": 1260.00,
+          "capacity_per_share": 2.5,
+          "capacity_unit": "kWc"
+        },
+        {
+          "project_id": "00001",
+          "project_name": "Esch-sur-Alzette Community Battery",
+          "energy_type": "battery",
+          "shares": 1,
+          "direction": "buy",
+          "purchase_date": "2024-09-01",
+          "purchase_price_per_share": 2500.00,
+          "total_investment": 2500.00,
+          "current_value_per_share": 2510.00,
+          "capacity_per_share": 10,
+          "capacity_unit": "kWh"
+        }
+      ]
+    },
+    {
+      "user_id": "user_002",
+      "name": "Jean Schmidt",
+      "email": "jean.schmidt@example.lu",
+      "pod_id": "00002",
+      "registration_date": "2024-01-10",
+      "transactions": [
+        {
+          "project_id": "00006",
+          "project_name": "Ettelbruck Community Wind",
+          "energy_type": "wind",
+          "shares": 6,
+          "direction": "buy",
+          "purchase_date": "2023-02-20",
+          "purchase_price_per_share": 1150.00,
+          "total_investment": 6900.00,
+          "current_value_per_share": 1185.00,
+          "capacity_per_share": 2.0,
+          "capacity_unit": "kW"
+        },{
+          "project_id": "00006",
+          "project_name": "Ettelbruck Community Wind",
+          "energy_type": "wind",
+          "shares": 2,
+          "direction": "buy",
+          "purchase_date": "2023-04-20",
+          "purchase_price_per_share": 1160.00,
+          "total_investment": 2320.00,
+          "current_value_per_share": 1185.00,
+          "capacity_per_share": 2.0,
+          "capacity_unit": "kW"
+        },
+        {
+          "project_id": "00006",
+          "project_name": "Ettelbruck Community Wind",
+          "energy_type": "wind",
+          "shares": 4,
+          "direction": "sell",
+          "purchase_date": "2023-12-15",
+          "purchase_price_per_share": 1180.00,
+          "total_investment": 4720.00,
+          "current_value_per_share": 1185.00,
+          "capacity_per_share": 2.0,
+          "capacity_unit": "kW"
+        },
+        {
+          "project_id": "00004",
+          "project_name": "Luxembourg City Rooftop Solar",
+          "energy_type": "solar",
+          "shares": 4,
+          "direction": "buy",
+          "purchase_date": "2023-04-10",
+          "purchase_price_per_share": 1100.00,
+          "total_investment": 4400.00,
+          "current_value_per_share": 1120.00,
+          "capacity_per_share": 2.0,
+          "capacity_unit": "kWc"
+        }
+      ]
+    },
+    {
+      "user_id": "user_003",
+      "name": "Sophie Weber",
+      "email": "sophie.weber@example.lu",
+      "pod_id": "00003",
+      "registration_date": "2023-11-05",
+      "transactions": [
+        {
+          "project_id": "00002",
+          "project_name": "Bertrange Solar Park Phase 2",
+          "energy_type": "solar",
+          "shares": 10,
+          "direction": "buy",
+          "purchase_date": "2023-12-01",
+          "purchase_price_per_share": 1250.00,
+          "total_investment": 12500.00,
+          "current_value_per_share": 1265.00,
+          "capacity_per_share": 2.5,
+          "capacity_unit": "kWc"
+        },
+        {
+          "project_id": "00003",
+          "project_name": "Erpeldange Wind Farm",
+          "energy_type": "wind",
+          "shares": 12,
+          "direction": "buy",
+          "purchase_date": "2024-01-15",
+          "purchase_price_per_share": 850.00,
+          "total_investment": 10200.00,
+          "current_value_per_share": 865.00,
+          "capacity_per_share": 1.5,
+          "capacity_unit": "kW"
+        },
+        {
+          "project_id": "00005",
+          "project_name": "Differdange Industrial Battery",
+          "energy_type": "battery",
+          "shares": 2,
+          "direction": "buy",
+          "purchase_date": "2024-03-01",
+          "purchase_price_per_share": 5800.00,
+          "total_investment": 11600.00,
+          "current_value_per_share": 5850.00,
+          "capacity_per_share": 25,
+          "capacity_unit": "kWh"
+        }
+      ]
+    }
+  ]
+}

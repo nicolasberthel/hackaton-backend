@@ -40,7 +40,7 @@
         }
     },
     {
-        "id": "00002",
+        "id": "00012",
         "name": "Bertrange Solar Park Phase 2",
         "description": "Rooftop solar installation on industrial buildings with optimal south-facing orientation",
         "capacity": {
@@ -81,24 +81,24 @@
         }
     },
     {
-        "id": "00003",
-        "name": "Erpeldange Wind Farm",
-        "description": "Northern Luxembourg wind farm with consistent production and excellent wind conditions",
+        "id": "00015",
+        "name": "Flebour Wind Farm",
+        "description": "Northern Luxembourg wind farm with 3 Enercon E92 turbines in Diekirch region",
         "capacity": {
-            "value": 150,
+            "value": 7050,
             "unit": "kW"
         },
         "capacity_per_share": {
             "value": 1.5,
             "unit": "kW"
         },
-        "start_supply": "2025-06-13",
+        "start_supply": "2023-06-13",
         "location": {
-            "city": "Erpeldange",
+            "city": "Flebour",
             "country": "Luxembourg",
             "coordinates": {
-                "latitude": 49.86116363958534,
-                "longitude": 6.129282791539355
+                "latitude": 49.90872174268515,
+                "longitude": 6.097372162585651
             }
         },
         "energy": "wind",
@@ -205,7 +205,7 @@
         }
     },
     {
-        "id": "00006",
+        "id": "00014",
         "name": "Ettelbruck Community Wind",
         "description": "Community-owned wind turbine with excellent capacity factor and local support",
         "capacity": {
@@ -410,6 +410,52 @@
             "warranty_years": 20,
             "capacity_factor": 0.35,
             "special_feature": "Mountain location - premium wind resource"
+        }
+    },
+    {
+        "id": "00011",
+        "name": "Binsfeld Wind Farm",
+        "description": "Operational onshore wind farm with 5 Enercon E82 turbines in Clervaux region",
+        "capacity": {
+            "value": 11500,
+            "unit": "kW"
+        },
+        "capacity_per_share": {
+            "value": 115,
+            "unit": "kW"
+        },
+        "start_supply": "2025-06-13",
+        "location": {
+            "city": "Binsfeld",
+            "country": "Luxembourg",
+            "coordinates": {
+                "latitude": 50.119167,
+                "longitude": 6.038611
+            }
+        },
+        "energy": "wind",
+        "shares": {
+            "total": 100,
+            "price": 6508500.00,
+            "available": 70,
+            "sold": 30
+        },
+        "status": "operational",
+        "forecast": {
+            "return": 9.8,
+            "co2_savings_per_share": 16.5,
+            "annual_production_per_share": 33500
+        },
+        "specs": {
+            "turbine_type": "Enercon E82/2300",
+            "turbine_count": 5,
+            "turbine_power": 2300,
+            "rotor_diameter": 82,
+            "hub_height": 80,
+            "warranty_years": 20,
+            "capacity_factor": 0.33,
+            "developer": "Enovos",
+            "operator": "Soler"
         }
     }
 ]

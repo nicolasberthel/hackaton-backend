@@ -37,11 +37,11 @@
           "project_id": "00012",
           "project_name": "Bertrange Solar Park Phase 2",
           "energy_type": "solar",
-          "shares": 1,
+          "shares": 4,
           "direction": "buy",
           "purchase_date": "2024-05-15",
           "purchase_price_per_share": 1260.00,
-          "total_investment": 1260.00,
+          "total_investment": 5040.00,
           "current_value_per_share": 1260.00,
           "capacity_per_share": 2.5,
           "capacity_unit": "kWc"
